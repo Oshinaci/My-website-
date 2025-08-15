@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Startup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 bg-blue-500 dark:bg-gray-800">
+    <h1 class="text-white font-bold text-xl" data-aos="fade-down">My Startup</h1>
+    <button id="darkToggle" class="px-3 py-1 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 rounded hover:scale-105 transform transition" data-aos="fade-down">
+      🌙
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-indigo-500 dark:from-gray-700 dark:to-gray-900">
+    <h2 class="text-4xl font-bold text-white mb-4" data-aos="fade-up">Solusi Website Modern</h2>
+    <p class="text-white max-w-xl mx-auto mb-6" data-aos="fade-up" data-aos-delay="200">
+      Bantu bisnis Anda tampil profesional dengan website cepat, aman, dan gratis hosting di GitHub Pages.
+    </p>
+    <a href="https://wa.me/6282124643404" target="_blank" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition" data-aos="fade-up" data-aos-delay="400">
+      Hubungi Kami
+    </a>
+  </section>
+
+  <!-- Fitur Website -->
+  <section class="max-w-6xl mx-auto py-16 px-4">
+    <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Fitur Website Kami</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up">
+        <h4 class="text-xl font-bold mb-2">Hosting Gratis</h4>
+        <p>Website di-host gratis di GitHub Pages tanpa biaya bulanan.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-xl font-bold mb-2">Desain Responsif</h4>
+        <p>Tampilan menyesuaikan semua ukuran layar, dari HP hingga desktop.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-bold mb-2">Mode Gelap/Terang</h4>
+        <p>Pilih tema sesuai selera dengan tombol dark mode.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="text-xl font-bold mb-2">Animasi Scroll</h4>
+        <p>Konten muncul elegan saat Anda scroll ke bawah.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="400">
+        <h4 class="text-xl font-bold mb-2">Optimasi SEO</h4>
+        <p>Struktur HTML ramah mesin pencari agar mudah ditemukan di Google.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section class="max-w-4xl mx-auto py-12 px-4 flex flex-col md:flex-row items-center gap-8">
+    <img src="foto-saya.png" alt="Foto Saya" class="w-48 h-48 object-cover rounded-full shadow-lg hover:scale-105 transform transition" data-aos="fade-right">
+    <div data-aos="fade-left">
+      <h3 class="text-2xl font-bold mb-4">Tentang Kami</h3>
+      <p>
+        Kami membantu UMKM & startup tampil profesional di internet dengan landing page cepat, aman, dan mudah dikelola.
+        Stack ringan: HTML + Tailwind + sedikit JavaScript. Hosting gratis di GitHub Pages.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-500 dark:bg-gray-800 text-white text-center py-4" data-aos="fade-up">
+    &copy; 2025 My Startup. All rights reserved.
+  </footer>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
